@@ -1,0 +1,4 @@
+Principal: 1400 x 430
+pequeñas: 600 x 400
+
+Restaurante: 980 x 530

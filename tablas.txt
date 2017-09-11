@@ -1,0 +1,25 @@
+CREATE TABLE usuarios
+(login VARCHAR(20) PRIMARY KEY NOT NULL,
+ dni VARCHAR(11) UNIQUE,
+ nombre VARCHAR(30),
+ apellidos VARCHAR(70),
+ direccion VARCHAR(70));
+
+CREATE TABLE habitaciones
+(id INT(20) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+ tipo VARCHAR(11),
+ descripcion VARCHAR(200),
+ precio INT(20));
+
+CREATE TABLE reservas
+(id INT(20) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+idHab INT(11),
+tipoHab VARCHAR(20),
+login VARCHAR(20),
+llegada VARCHAR(20),
+salida VARCHAR(20),
+adultos VARCHAR(5),
+children VARCHAR(5),
+servicio VARCHAR(20),
+pago INT(5),
+FOREIGN KEY (idHab) REFERENCES habitaciones(id));

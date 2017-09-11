@@ -1,0 +1,17 @@
+header {
+	text-align:center;
+	width:100%;
+	font-size:24px;
+	margin-bottom:20px;
+	color: #2875BB;
+}
+
+th {
+	padding: 1rem;
+	width: 1rem;
+}
+
+#fetch-results {
+	height: 80rem;
+	overflow-y: scroll;
+}
