@@ -12,16 +12,16 @@ $mail->CharSet = "UTF-8";
 //$mail->SMTPDebug = 3;                               	// Enable verbose debug output
 
 $mail->isSMTP();                                      	// Configurar mailer para usar SMTP
-$mail->Host = 'smtp.1and1.es';		  					// Specify main and backup SMTP servers
+$mail->Host = '';		  			                    // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               	// Activar autentificación SMTP
-$mail->Username = 'contacto@royalhostel.es';          	// usuario SMTP
-$mail->Password = 'Maba1187';                         	// contraseña SMTP
+$mail->Username = '';          				            // Usuario SMTP
+$mail->Password = '';                         		    // Contraseña SMTP
 $mail->SMTPSecure = 'tls';                            	// Activar encriptación TLS, `ssl` también es aceptada
 $mail->Port = 587;                                    	// Puerto para conectarse por TCP
 
-$mail->setFrom('contacto@royalhostel.es', 'Bienvenido a RoyalHostel.es');
-$mail->addAddress($correo, $nombre);     				// Añadimos destinatario
-$mail->addAddress('juancarlospazdelgado@gmail.com', 'Juan Carlos Paz Delgado');     // Nombre es opcional
+$mail->setFrom('', 'Contacto footer');
+$mail->addAddress('', '');     				            // Añadir destinatario
+$mail->addAddress('', '');     				            // Name is optional
 
 $mail->addReplyTo('', 'Information');
 //$mail->addCC('');
