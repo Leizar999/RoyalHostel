@@ -1,5 +1,5 @@
-<?php 
-	header('Content-Type: application/javascript'); 
+<?php
+	header('Content-Type: application/javascript');
 	session_start();
 ?>
 
@@ -14,7 +14,7 @@ paypal.Button.render({
     env: 'sandbox', // Or 'sandbox'
 
     client: {
-        sandbox: 'ASo4KPzk0pb-C5d_mfYb2C5tkV1I3lfYaAlE8apO8p_6U11kUAoX7SeSWJBct8pJbjxQBvkoeqWVBPGy',
+        sandbox: '',
         //production: 'xxxxxxxxx'
     },
 
@@ -32,7 +32,7 @@ paypal.Button.render({
 
     onAuthorize: function(data, actions) {
         return actions.payment.execute().then(function(payment) {
-        
+
 			window.location.replace("/programa/insertarReserva.php");
 
         });

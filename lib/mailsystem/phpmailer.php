@@ -16,8 +16,8 @@ $mail->Host = '';		  			                    // Specify main and backup SMTP serv
 $mail->SMTPAuth = true;                               	// Activar autentificación SMTP
 $mail->Username = '';          				            // Usuario SMTP
 $mail->Password = '';                         		    // Contraseña SMTP
-$mail->SMTPSecure = 'tls';                            	// Activar encriptación TLS, `ssl` también es aceptada
-$mail->Port = 587;                                    	// Puerto para conectarse por TCP
+$mail->SMTPSecure = '';                            	// Activar encriptación TLS, `ssl` también es aceptada
+$mail->Port = ;                                    	// Puerto para conectarse por TCP
 
 $mail->setFrom('', 'Contacto footer');
 $mail->addAddress('', '');     				// Añadir destinatario
@@ -29,7 +29,7 @@ $mail->addReplyTo('', 'Information');
 
 $mail->addAttachment($_SERVER["DOCUMENT_ROOT"] . '/reservas/reserva.pdf');         // Añadir adjuntos
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Nombre es opcional
-$mail->isHTML(true);  
+$mail->isHTML(true);
 
 $mail->Subject = 'Reserva RoyalHostel.es';
 $mail->Body    = 'Esto es un mensaje autogenerado por el sistema de mail de RoyalHostel.es';

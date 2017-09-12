@@ -14,8 +14,8 @@ $mail->Host = '';		  			// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               	// Activar autentificación SMTP
 $mail->Username = '';          				// Usuario SMTP
 $mail->Password = '';                         		// Contraseña SMTP
-$mail->SMTPSecure = 'tls';                            	// Activar encriptación TLS, `ssl` también es aceptada
-$mail->Port = 587;                                    	// Puerto para conectarse por TCP
+$mail->SMTPSecure = '';                            	// Activar encriptación TLS, `ssl` también es aceptada
+$mail->Port = ;                                    	// Puerto para conectarse por TCP
 
 $mail->setFrom('', 'Contacto footer');
 $mail->addAddress('', '');     				// Añadir destinatario
