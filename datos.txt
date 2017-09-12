@@ -1,11 +1,1 @@
-Configuración de la Base de Datos de MySQL
-En lo que sigue encontrará las características de su base de datos MySQL.
-Nombre de la base de datos :	db666418063
-Nombre del Host :	db666418063.db.1and1.com
-Puerto :	3306
-Nombre de usuario :	dbo666418063
-Descripción :	Royal Hostel BD
-Versión :	MySQL5.5
-Estado :	Se ha iniciado la configuración
 
-76037240
