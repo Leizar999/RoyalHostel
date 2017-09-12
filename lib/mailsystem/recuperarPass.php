@@ -9,17 +9,17 @@ $mail = new PHPMailer;
 $mail->CharSet = "UTF-8";
 //$mail->SMTPDebug = 3;                               	// Enable verbose debug output
 
-$mail->isSMTP();                                      	// Set mailer to use SMTP
-$mail->Host = 'smtp.1and1.es';		  					// Specify main and backup SMTP servers
-$mail->SMTPAuth = true;                               	// Enable SMTP authentication
-$mail->Username = 'contacto@royalhostel.es';          	// SMTP username
-$mail->Password = 'Maba1187';                         	// SMTP password
-$mail->SMTPSecure = 'tls';                            	// Enable TLS encryption, `ssl` also accepted
-$mail->Port = 587;                                    	// TCP port to connect to
+$mail->isSMTP();                                      	// Configurar mailer para usar SMTP
+$mail->Host = '';		  			                            // Specify main and backup SMTP servers
+$mail->SMTPAuth = true;                               	// Activar autentificación SMTP
+$mail->Username = '';          				                  // Usuario SMTP
+$mail->Password = '';                         		      // Contraseña SMTP
+$mail->SMTPSecure = 'tls';                            	// Activar encriptación TLS, `ssl` también es aceptada
+$mail->Port = 587;                                    	// Puerto para conectarse por TCP
 
-$mail->setFrom('admin@royalhostel.es', 'Recuperar contraseña');
-$mail->addAddress($email, $email);   												// Add a recipient
-$mail->addAddress('juancarlospazdelgado@gmail.com', 'Juan Carlos Paz Delgado');     // Name is optional
+$mail->setFrom('', 'Contacto footer');
+$mail->addAddress('', '');     				// Añadir destinatario
+$mail->addAddress('', '');     				// Name is optional
 
 $mail->addReplyTo('', 'Information');
 //$mail->addCC('');
