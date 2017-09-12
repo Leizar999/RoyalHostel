@@ -3,10 +3,10 @@
 $host = "localhost"; //database location
 $user = "root"; //database username
 $pass = ""; //database password
-$db_name = "royalhostel"; //database name
+$db_name = ""; //database name
 
 // PayPal settings
-$paypal_email = 'juankypd-facilitator@gmail.com';
+$paypal_email = '';
 $return_url = 'localhost:8081/lib/paypal/payment-successful.html';
 $cancel_url = 'localhost:8081/lib/paypal/payment-cancelled.html';
 $notify_url = 'localhost:8081/lib/paypal/payments.php';
