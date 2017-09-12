@@ -1,5 +1,5 @@
 <?php
-	
+
 	class BD{
 
 		private $servidor;
@@ -13,7 +13,7 @@
 			$this->servidor = "localhost";
 			$this->usuario = "root";
 			$this->contrasenia = "";
-			$this->bbdd = "royalhostel";
+			$this->bbdd = "";
 			$this->conexion = new mysqli($this->servidor, $this->usuario, $this->contrasenia, $this->bbdd) or die("Problemas en la conexion: " . mysqli_error($this->conexion));
 			self::$instancia = null;
 		}
